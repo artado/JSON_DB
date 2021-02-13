@@ -1,0 +1,681 @@
+{
+    "data": [
+        {
+            "meta": {
+                "columnNames": {
+                    "cells": {
+                        "values": "data.traces.*.meta.description - name"
+                    }
+                }
+            },
+            "mode": "markers",
+            "type": "table",
+            "cells": {
+                "meta": {
+                    "columnNames": {
+                        "values": "data.traces.*.meta.description - name"
+                    }
+                },
+                "valuessrc": "danberman:2:8692a3,b920ba*",
+                "values": [
+                    [
+                        "The scatter trace type encompasses line charts, scatter charts, text charts, and bubble charts. The data visualized as scatter point or lines is set in `x` and `y`. Text (appearing either on the chart or on hover only) is via `text`. Bubble charts are achieved by setting `marker.size` and/or `marker.color` to numerical arrays.",
+                        "The data visualized by the span of the bars is set in `y` if `orientation` is set th *v* (the default) and the labels are set in `x`. By setting `orientation` to *h*, the roles are interchanged.",
+                        "Each box spans from quartile 1 (Q1) to quartile 3 (Q3). The second quartile (Q2, i.e. the median) is marked by a line inside the box. The fences grow outward from the boxes' edges, by default they span +/- 1.5 times the interquartile range (IQR: Q3-Q1), The sample mean and standard deviation as well as notches and the sample, outlier and suspected outliers points can be optionally added to the box plot. The values and positions corresponding to each boxes can be input using two signatures. The first signature expects users to supply the sample values in the `y` data array for vertical boxes (`x` for horizontal boxes). By supplying an `x` (`y`) array, one box per distinct `x` (`y`) value is drawn If no `x` (`y`) {array} is provided, a single box is drawn. In this case, the box is positioned with the trace `name` or with `x0` (`y0`) if provided. The second signature expects users to supply the boxes corresponding Q1, median and Q3 statistics in the `q1`, `median` and `q3` data arrays respectively. Other box features relying on statistics namely `lowerfence`, `upperfence`, `notchspan` can be set directly by the users. To have plotly compute them or to show sample points besides the boxes, users can set the `y` data array for vertical boxes (`x` for horizontal boxes) to a 2D array with the outer length corresponding to the number of boxes in the traces and the inner length corresponding the sample size.",
+                        "The data that describes the heatmap value-to-color mapping is set in `z`. Data in `z` can either be a {2D array} of values (ragged or not) or a 1D array of values. In the case where `z` is a {2D array}, say that `z` has N rows and M columns. Then, by default, the resulting heatmap will have N partitions along the y axis and M partitions along the x axis. In other words, the i-th row/ j-th column cell in `z` is mapped to the i-th partition of the y axis (starting from the bottom of the plot) and the j-th partition of the x-axis (starting from the left of the plot). This behavior can be flipped by using `transpose`. Moreover, `x` (`y`) can be provided with M or M+1 (N or N+1) elements. If M (N), then the coordinates correspond to the center of the heatmap cells and the cells have equal width. If M+1 (N+1), then the coordinates correspond to the edges of the heatmap cells. In the case where `z` is a 1D {array}, the x and y coordinates must be provided in `x` and `y` respectively to form data triplets.",
+                        "The sample data from which statistics are computed is set in `x` for vertically spanning histograms and in `y` for horizontally spanning histograms. Binning options are set `xbins` and `ybins` respectively if no aggregation data is provided.",
+                        "The sample data from which statistics are computed is set in `x` and `y` (where `x` and `y` represent marginal distributions, binning is set in `xbins` and `ybins` in this case) or `z` (where `z` represent the 2D distribution and binning set, binning is set by `x` and `y` in this case). The resulting distribution is visualized as a heatmap.",
+                        "The sample data from which statistics are computed is set in `x` and `y` (where `x` and `y` represent marginal distributions, binning is set in `xbins` and `ybins` in this case) or `z` (where `z` represent the 2D distribution and binning set, binning is set by `x` and `y` in this case). The resulting distribution is visualized as a contour plot.",
+                        "The data from which contour lines are computed is set in `z`. Data in `z` must be a {2D array} of numbers. Say that `z` has N rows and M columns, then by default, these N rows correspond to N y coordinates (set in `y` or auto-generated) and the M columns correspond to M x coordinates (set in `x` or auto-generated). By setting `transpose` to *true*, the above behavior is flipped.",
+                        "Provides similar functionality to the *scatter* type but on a ternary phase diagram. The data is provided by at least two arrays out of `a`, `b`, `c` triplets.",
+                        "In vertical (horizontal) violin plots, statistics are computed using `y` (`x`) values. By supplying an `x` (`y`) array, one violin per distinct x (y) value is drawn If no `x` (`y`) {array} is provided, a single violin is drawn. That violin position is then positioned with with `name` or with `x0` (`y0`) if provided.",
+                        "Visualize stages in a process using length-encoded bars. This trace can be used to show data in either a part-to-whole representation wherein each item appears in a single stage, or in a \"drop-off\" representation wherein each item appears in each stage it traversed. See also the \"funnelarea\" trace type for a different approach to visualizing funnel data.",
+                        "Draws waterfall trace which is useful graph to displays the contribution of various elements (either positive or negative) in a bar chart. The data visualized by the span of the bars is set in `y` if `orientation` is set th *v* (the default) and the labels are set in `x`. By setting `orientation` to *h*, the roles are interchanged.",
+                        "Display an image, i.e. data on a 2D regular raster. By default, when an image is displayed in a subplot, its y axis will be reversed (ie. `autorange: 'reversed'`), constrained to the domain (ie. `constrain: 'domain'`) and it will have the same scale as its x axis (ie. `scaleanchor: 'x,`) in order for pixels to be rendered as squares.",
+                        "A data visualized by the sectors of the pie is set in `values`. The sector labels are set in `labels`. The sector colors are set in `marker.colors`",
+                        "Visualize hierarchal data spanning outward radially from root to leaves. The sunburst sectors are determined by the entries in *labels* or *ids* and in *parents*.",
+                        "Visualize hierarchal data from leaves (and/or outer branches) towards root with rectangles. The treemap sectors are determined by the entries in *labels* or *ids* and in *parents*.",
+                        "Visualize stages in a process using area-encoded trapezoids. This trace can be used to show data in a part-to-whole representation similar to a \"pie\" trace, wherein each item appears in a single stage. See also the \"funnel\" trace type for a different approach to visualizing funnel data.",
+                        "The data visualized as scatter point or lines in 3D dimension is set in `x`, `y`, `z`. Text (appearing either on the chart or on hover only) is via `text`. Bubble charts are achieved by setting `marker.size` and/or `marker.color` Projections are achieved via `projection`. Surface fills are achieved via `surfaceaxis`.",
+                        "The data the describes the coordinates of the surface is set in `z`. Data in `z` should be a {2D array}. Coordinates in `x` and `y` can either be 1D {arrays} or {2D arrays} (e.g. to graph parametric surfaces). If not provided in `x` and `y`, the x and y coordinates are assumed to be linear starting at 0 with a unit step. The color scale corresponds to the `z` values by default. For custom color scales, use `surfacecolor` which should be a {2D array}, where its bounds can be controlled using `cmin` and `cmax`.",
+                        "Draws isosurfaces between iso-min and iso-max values with coordinates given by four 1-dimensional arrays containing the `value`, `x`, `y` and `z` of every vertex of a uniform or non-uniform 3-D grid. Horizontal or vertical slices, caps as well as spaceframe between iso-min and iso-max values could also be drawn using this trace.",
+                        "Draws volume trace between iso-min and iso-max values with coordinates given by four 1-dimensional arrays containing the `value`, `x`, `y` and `z` of every vertex of a uniform or non-uniform 3-D grid. Horizontal or vertical slices, caps as well as spaceframe between iso-min and iso-max values could also be drawn using this trace.",
+                        "Draws sets of triangles with coordinates given by three 1-dimensional arrays in `x`, `y`, `z` and (1) a sets of `i`, `j`, `k` indices (2) Delaunay triangulation or (3) the Alpha-shape algorithm or (4) the Convex-hull algorithm",
+                        "Use cone traces to visualize vector fields.  Specify a vector field using 6 1D arrays, 3 position arrays `x`, `y` and `z` and 3 vector component arrays `u`, `v`, `w`. The cones are drawn exactly at the positions given by `x`, `y` and `z`.",
+                        "Use a streamtube trace to visualize flow in a vector field.  Specify a vector field using 6 1D arrays of equal length, 3 position arrays `x`, `y` and `z` and 3 vector component arrays `u`, `v`, and `w`.  By default, the tubes' starting positions will be cut from the vector field's x-z plane at its minimum y value. To specify your own starting position, use attributes `starts.x`, `starts.y` and `starts.z`. The color is encoded by the norm of (u, v, w), and the local radius by the divergence of (u, v, w).",
+                        "The data visualized as scatter point or lines on a geographic map is provided either by longitude/latitude pairs in `lon` and `lat` respectively or by geographic location IDs or names in `locations`.",
+                        "The data that describes the choropleth value-to-color mapping is set in `z`. The geographic locations corresponding to each value in `z` are set in `locations`.",
+                        "The data visualized as scatter point or lines is set in `x` and `y` using the WebGL plotting engine. Bubble charts are achieved by setting `marker.size` and/or `marker.color` to a numerical arrays.",
+                        "Splom traces generate scatter plot matrix visualizations. Each splom `dimensions` items correspond to a generated axis. Values for each of those dimensions are set in `dimensions[i].values`. Splom traces support all `scattergl` marker style attributes. Specify `layout.grid` attributes and/or layout x-axis and y-axis attributes for more control over the axis positioning and style.",
+                        "The data visualized as a point cloud set in `x` and `y` using the WebGl plotting engine.",
+                        "WebGL version of the heatmap trace type.",
+                        "Parallel coordinates for multidimensional exploratory data analysis. The samples are specified in `dimensions`. The colors are set in `line.color`.",
+                        "Parallel categories diagram for multidimensional categorical data.",
+                        "The data visualized as scatter point, lines or marker symbols on a Mapbox GL geographic map is provided by longitude/latitude pairs in `lon` and `lat`.",
+                        "GeoJSON features to be filled are set in `geojson` The data that describes the choropleth value-to-color mapping is set in `locations` and `z`.",
+                        "Draws a bivariate kernel density estimation with a Gaussian kernel from `lon` and `lat` coordinates and optional `z` values using a colorscale.",
+                        "Sankey plots for network flow data analysis. The nodes are specified in `nodes` and the links between sources and targets in `links`. The colors are set in `nodes[i].color` and `links[i].color`, otherwise defaults are used.",
+                        "An indicator is used to visualize a single `value` along with some contextual information such as `steps` or a `threshold`, using a combination of three visual elements: a number, a delta, and/or a gauge. Deltas are taken with respect to a `reference`. Gauges can be either angular or bullet (aka linear) gauges.",
+                        "Table view for detailed data viewing. The data are arranged in a grid of rows and columns. Most styling can be specified for columns, rows or individual cells. Table is using a column-major order, ie. the grid is represented as a vector of column vectors.",
+                        "The data describing carpet axis layout is set in `y` and (optionally) also `x`. If only `y` is present, `x` the plot is interpreted as a cheater plot and is filled in using the `y` values. `x` and `y` may either be 2D arrays matching with each dimension matching that of `a` and `b`, or they may be 1D arrays with total length equal to that of `a` and `b`.",
+                        "Plots a scatter trace on either the first carpet axis or the carpet axis with a matching `carpet` attribute.",
+                        "Plots contours on either the first carpet axis or the carpet axis with a matching `carpet` attribute. Data `z` is interpreted as matching that of the corresponding carpet axis.",
+                        "The ohlc (short for Open-High-Low-Close) is a style of financial chart describing open, high, low and close for a given `x` coordinate (most likely time). The tip of the lines represent the `low` and `high` values and the horizontal segments represent the `open` and `close` values. Sample points where the close value is higher (lower) then the open value are called increasing (decreasing). By default, increasing items are drawn in green whereas decreasing are drawn in red.",
+                        "The candlestick is a style of financial chart describing open, high, low and close for a given `x` coordinate (most likely time). The boxes represent the spread between the `open` and `close` values and the lines represent the spread between the `low` and `high` values Sample points where the close value is higher (lower) then the open value are called increasing (decreasing). By default, increasing candles are drawn in green whereas decreasing are drawn in red.",
+                        "The scatterpolar trace type encompasses line charts, scatter charts, text charts, and bubble charts in polar coordinates. The data visualized as scatter point or lines is set in `r` (radial) and `theta` (angular) coordinates Text (appearing either on the chart or on hover only) is via `text`. Bubble charts are achieved by setting `marker.size` and/or `marker.color` to numerical arrays.",
+                        "The scatterpolargl trace type encompasses line charts, scatter charts, and bubble charts in polar coordinates using the WebGL plotting engine. The data visualized as scatter point or lines is set in `r` (radial) and `theta` (angular) coordinates Bubble charts are achieved by setting `marker.size` and/or `marker.color` to numerical arrays.",
+                        "The data visualized by the radial span of the bars is set in `r`",
+                        "undefined"
+                    ],
+                    [
+                        "scatter",
+                        "bar",
+                        "box",
+                        "heatmap",
+                        "histogram",
+                        "histogram2d",
+                        "histogram2dcontour",
+                        "contour",
+                        "scatterternary",
+                        "violin",
+                        "funnel",
+                        "waterfall",
+                        "image",
+                        "pie",
+                        "sunburst",
+                        "treemap",
+                        "funnelarea",
+                        "scatter3d",
+                        "surface",
+                        "isosurface",
+                        "volume",
+                        "mesh3d",
+                        "cone",
+                        "streamtube",
+                        "scattergeo",
+                        "choropleth",
+                        "scattergl",
+                        "splom",
+                        "pointcloud",
+                        "heatmapgl",
+                        "parcoords",
+                        "parcats",
+                        "scattermapbox",
+                        "choroplethmapbox",
+                        "densitymapbox",
+                        "sankey",
+                        "indicator",
+                        "table",
+                        "carpet",
+                        "scattercarpet",
+                        "contourcarpet",
+                        "ohlc",
+                        "candlestick",
+                        "scatterpolar",
+                        "scatterpolargl",
+                        "barpolar",
+                        "area"
+                    ]
+                ]
+            },
+            "header": {
+                "values": "~:-100:~1001,~1000*"
+            }
+        }
+    ],
+    "layout": {
+        "xaxis": {
+            "range": [
+                -1,
+                6
+            ],
+            "autorange": true
+        },
+        "yaxis": {
+            "range": [
+                -1,
+                4
+            ],
+            "autorange": true
+        },
+        "autosize": true,
+        "template": {
+            "data": {
+                "bar": [
+                    {
+                        "type": "bar",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "table": [
+                    {
+                        "type": "table",
+                        "cells": {
+                            "fill": {
+                                "color": "#EBF0F8"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "header": {
+                            "fill": {
+                                "color": "#C8D4E3"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        }
+                    }
+                ],
+                "carpet": [
+                    {
+                        "type": "carpet",
+                        "aaxis": {
+                            "gridcolor": "#C8D4E3",
+                            "linecolor": "#C8D4E3",
+                            "endlinecolor": "#2a3f5f",
+                            "minorgridcolor": "#C8D4E3",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "baxis": {
+                            "gridcolor": "#C8D4E3",
+                            "linecolor": "#C8D4E3",
+                            "endlinecolor": "#2a3f5f",
+                            "minorgridcolor": "#C8D4E3",
+                            "startlinecolor": "#2a3f5f"
+                        }
+                    }
+                ],
+                "mesh3d": [
+                    {
+                        "type": "mesh3d",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        }
+                    }
+                ],
+                "contour": [
+                    {
+                        "type": "contour",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        },
+                        "autocolorscale": true
+                    }
+                ],
+                "heatmap": [
+                    {
+                        "type": "heatmap",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        },
+                        "autocolorscale": true
+                    }
+                ],
+                "scatter": [
+                    {
+                        "type": "scatter",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "surface": [
+                    {
+                        "type": "surface",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        }
+                    }
+                ],
+                "heatmapgl": [
+                    {
+                        "type": "heatmapgl",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        }
+                    }
+                ],
+                "histogram": [
+                    {
+                        "type": "histogram",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "parcoords": [
+                    {
+                        "line": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        },
+                        "type": "parcoords"
+                    }
+                ],
+                "scatter3d": [
+                    {
+                        "type": "scatter3d",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "scattergl": [
+                    {
+                        "type": "scattergl",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "choropleth": [
+                    {
+                        "type": "choropleth",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        }
+                    }
+                ],
+                "scattergeo": [
+                    {
+                        "type": "scattergeo",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "histogram2d": [
+                    {
+                        "type": "histogram2d",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        },
+                        "autocolorscale": true
+                    }
+                ],
+                "scatterpolar": [
+                    {
+                        "type": "scatterpolar",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "contourcarpet": [
+                    {
+                        "type": "contourcarpet",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        }
+                    }
+                ],
+                "scattercarpet": [
+                    {
+                        "type": "scattercarpet",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "scattermapbox": [
+                    {
+                        "type": "scattermapbox",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "scatterpolargl": [
+                    {
+                        "type": "scatterpolargl",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "scatterternary": [
+                    {
+                        "type": "scatterternary",
+                        "marker": {
+                            "colorbar": {
+                                "ticks": "",
+                                "outlinewidth": 0
+                            }
+                        }
+                    }
+                ],
+                "histogram2dcontour": [
+                    {
+                        "type": "histogram2dcontour",
+                        "colorbar": {
+                            "ticks": "",
+                            "outlinewidth": 0
+                        },
+                        "autocolorscale": true
+                    }
+                ]
+            },
+            "layout": {
+                "geo": {
+                    "bgcolor": "white",
+                    "showland": true,
+                    "lakecolor": "white",
+                    "landcolor": "white",
+                    "showlakes": true,
+                    "subunitcolor": "#C8D4E3"
+                },
+                "font": {
+                    "color": "#2a3f5f"
+                },
+                "polar": {
+                    "bgcolor": "white",
+                    "radialaxis": {
+                        "ticks": "",
+                        "gridcolor": "#EBF0F8",
+                        "linecolor": "#EBF0F8"
+                    },
+                    "angularaxis": {
+                        "ticks": "",
+                        "gridcolor": "#EBF0F8",
+                        "linecolor": "#EBF0F8"
+                    }
+                },
+                "scene": {
+                    "xaxis": {
+                        "ticks": "",
+                        "gridcolor": "#DFE8F3",
+                        "gridwidth": 2,
+                        "linecolor": "#EBF0F8",
+                        "zerolinecolor": "#EBF0F8",
+                        "showbackground": true,
+                        "backgroundcolor": "white"
+                    },
+                    "yaxis": {
+                        "ticks": "",
+                        "gridcolor": "#DFE8F3",
+                        "gridwidth": 2,
+                        "linecolor": "#EBF0F8",
+                        "zerolinecolor": "#EBF0F8",
+                        "showbackground": true,
+                        "backgroundcolor": "white"
+                    },
+                    "zaxis": {
+                        "ticks": "",
+                        "gridcolor": "#DFE8F3",
+                        "gridwidth": 2,
+                        "linecolor": "#EBF0F8",
+                        "zerolinecolor": "#EBF0F8",
+                        "showbackground": true,
+                        "backgroundcolor": "white"
+                    }
+                },
+                "title": {
+                    "x": 0.05
+                },
+                "xaxis": {
+                    "ticks": "",
+                    "gridcolor": "#EBF0F8",
+                    "linecolor": "#EBF0F8",
+                    "automargin": true,
+                    "zerolinecolor": "#EBF0F8",
+                    "zerolinewidth": 2
+                },
+                "yaxis": {
+                    "ticks": "",
+                    "gridcolor": "#EBF0F8",
+                    "linecolor": "#EBF0F8",
+                    "automargin": true,
+                    "zerolinecolor": "#EBF0F8",
+                    "zerolinewidth": 2
+                },
+                "ternary": {
+                    "aaxis": {
+                        "ticks": "",
+                        "gridcolor": "#DFE8F3",
+                        "linecolor": "#A2B1C6"
+                    },
+                    "baxis": {
+                        "ticks": "",
+                        "gridcolor": "#DFE8F3",
+                        "linecolor": "#A2B1C6"
+                    },
+                    "caxis": {
+                        "ticks": "",
+                        "gridcolor": "#DFE8F3",
+                        "linecolor": "#A2B1C6"
+                    },
+                    "bgcolor": "white"
+                },
+                "colorway": [
+                    "#636efa",
+                    "#EF553B",
+                    "#00cc96",
+                    "#ab63fa",
+                    "#19d3f3",
+                    "#e763fa",
+                    "#fecb52",
+                    "#ffa15a",
+                    "#ff6692",
+                    "#b6e880"
+                ],
+                "hovermode": "closest",
+                "colorscale": {
+                    "diverging": [
+                        [
+                            0,
+                            "#8e0152"
+                        ],
+                        [
+                            0.1,
+                            "#c51b7d"
+                        ],
+                        [
+                            0.2,
+                            "#de77ae"
+                        ],
+                        [
+                            0.3,
+                            "#f1b6da"
+                        ],
+                        [
+                            0.4,
+                            "#fde0ef"
+                        ],
+                        [
+                            0.5,
+                            "#f7f7f7"
+                        ],
+                        [
+                            0.6,
+                            "#e6f5d0"
+                        ],
+                        [
+                            0.7,
+                            "#b8e186"
+                        ],
+                        [
+                            0.8,
+                            "#7fbc41"
+                        ],
+                        [
+                            0.9,
+                            "#4d9221"
+                        ],
+                        [
+                            1,
+                            "#276419"
+                        ]
+                    ],
+                    "sequential": [
+                        [
+                            0,
+                            "#0508b8"
+                        ],
+                        [
+                            0.0893854748603352,
+                            "#1910d8"
+                        ],
+                        [
+                            0.1787709497206704,
+                            "#3c19f0"
+                        ],
+                        [
+                            0.2681564245810056,
+                            "#6b1cfb"
+                        ],
+                        [
+                            0.3575418994413408,
+                            "#981cfd"
+                        ],
+                        [
+                            0.44692737430167595,
+                            "#bf1cfd"
+                        ],
+                        [
+                            0.5363128491620112,
+                            "#dd2bfd"
+                        ],
+                        [
+                            0.6256983240223464,
+                            "#f246fe"
+                        ],
+                        [
+                            0.7150837988826816,
+                            "#fc67fd"
+                        ],
+                        [
+                            0.8044692737430168,
+                            "#fe88fc"
+                        ],
+                        [
+                            0.8938547486033519,
+                            "#fea5fd"
+                        ],
+                        [
+                            0.9832402234636871,
+                            "#febefe"
+                        ],
+                        [
+                            1,
+                            "#fec3fe"
+                        ]
+                    ],
+                    "sequentialminus": [
+                        [
+                            0,
+                            "#0508b8"
+                        ],
+                        [
+                            0.0893854748603352,
+                            "#1910d8"
+                        ],
+                        [
+                            0.1787709497206704,
+                            "#3c19f0"
+                        ],
+                        [
+                            0.2681564245810056,
+                            "#6b1cfb"
+                        ],
+                        [
+                            0.3575418994413408,
+                            "#981cfd"
+                        ],
+                        [
+                            0.44692737430167595,
+                            "#bf1cfd"
+                        ],
+                        [
+                            0.5363128491620112,
+                            "#dd2bfd"
+                        ],
+                        [
+                            0.6256983240223464,
+                            "#f246fe"
+                        ],
+                        [
+                            0.7150837988826816,
+                            "#fc67fd"
+                        ],
+                        [
+                            0.8044692737430168,
+                            "#fe88fc"
+                        ],
+                        [
+                            0.8938547486033519,
+                            "#fea5fd"
+                        ],
+                        [
+                            0.9832402234636871,
+                            "#febefe"
+                        ],
+                        [
+                            1,
+                            "#fec3fe"
+                        ]
+                    ]
+                },
+                "plot_bgcolor": "white",
+                "paper_bgcolor": "white",
+                "shapedefaults": {
+                    "line": {
+                        "width": 0
+                    },
+                    "opacity": 0.4,
+                    "fillcolor": "#506784"
+                },
+                "annotationdefaults": {
+                    "arrowhead": 0,
+                    "arrowcolor": "#506784",
+                    "arrowwidth": 1
+                }
+            },
+            "themeRef": "PLOTLY_WHITE"
+        }
+    },
+    "frames": []
+}
